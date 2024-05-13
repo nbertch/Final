@@ -1,0 +1,395 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+header {
+    background-color: #333;
+    padding: 20px;
+    position: relative;
+}
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%; 
+    width: 50%; 
+}
+.logo img {
+    width: 100%; 
+}
+.site-links {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.site-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.site-link:hover {
+    text-decoration: underline;
+}
+/* Adjust logo width for smaller screens */
+@media screen and (max-width: 600px) {
+    .logo,
+    .site-links {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .logo {
+        width: 20%; 
+    }
+}
+/* Larger screens */
+@media screen and (min-width: 601px) {
+    .logo {
+        margin-right: 10px; 
+        width: 10%;
+    }
+    .site-links {
+        display: inline-block;
+    }
+    .site-link {
+        font-size: 24px;
+    }
+}
+
+.main-section {
+    padding: 20px;
+}
+
+.main-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.text-wrapper {
+    flex: 1;
+    margin-left: 20px; 
+}
+
+.image-wrapper img {
+    max-width: 70%;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center; 
+    }
+    
+    .text-wrapper {
+        margin-left: 0;
+        margin-top: 10px; 
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.contact-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 20px; 
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px; 
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-section {
+        padding-bottom: 0; 
+    }
+}
+
+.product-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product-box {
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.product-box img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.size-dropdown {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.size-dropdown:focus {
+    outline: none;
+}
+
+.order-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.order-button:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 800px) {
+    .product-box {
+        width: 45%; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .product-box {
+        width: 100%; 
+    }
+}
+
+.thank-you-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.site-link[href="sizeguide.html"] {
+    color: #333; /* Change the color to a darker shade */
+    text-decoration: none; /* Remove underline */
+    margin-left: 10px; /* Adjust spacing */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+#searchInput {
+    padding: 8px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#searchInput:focus {
+    outline: none;
+}
+
+#searchButton {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #555;
+}
+
+.categories-section {
+    margin-bottom: 20px;
+}
+
+.categories-list {
+    list-style: none;
+    padding: 0;
+}
+
+.categories-list li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.category-link {
+    text-decoration: none;
+    color: #333;
+    border-bottom: 2px solid transparent;
+}
+
+.category-link:hover {
+    border-color: #333;
+}
+
+/* Modal Popup Styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5); /* Semi-transparent background */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.site-links {
+    display: flex;
+}
+
+.site-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.site-link:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#map {
+    margin: 20px auto;
+    border: 2px solid #ccc;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+        </div>
+        <div class="site-links">
+            <a href="index.html" class="site-link">Home</a>
+            <a href="shop.html" class="site-link">Shop</a>
+            <a href="newsletter.html" class="site-link">Newsletter</a>
+            <a href="shipping.html" class="site-link">Shipping Info</a>
+            <a href="stores.html" class="site-link">Store Locator</a>
+            <a href="contact.html" class="site-link">Contact</a>
+        </div>
+    </header>
+
+    <div id="salePopup" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Summer Sale</h2>
+            <p>Get up to 50% off on certain items.</p>
+        </div>
+    </div>
+
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button id="searchButton">Search</button>
+        </div>
+
+        <div>
+            <a href="sizeguide.html" class="site-link">Size Guide</a>
+        </div>
+        
+
+        <section class="categories-section">
+            <ul class="categories-list">
+                <li><a href="#" class="category-link" data-category="clothing">Clothing</a></li>
+                <li><a href="#" class="category-link" data-category="accessories">Accessories</a></li>
+            </ul>
+        </section>
+
+        <section class="sorting-section">
+            <select id="sort" class="sort-select">
+                <option value="default">Default</option>
+                <option value="price-low-to-high">Price: Low to High</option>
+                <option value="price-high-to-low">Price: High to Low</option>
+                <option value="alphabetical">Alphabetical</option>
+            </select>
+        </section>
+        
+        <section class="product-section">
+            <div class="product-box" data-category="clothing" data-price="19.99" data-name="Black Shirt">
+                <img src="images/product/black.jpg" alt="Black Shirt">
+                <h2>Black Shirt</h2>
+                <p class="price">$19.99</p>
+                <select class="size-dropdown">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+                <button class="order-button">Order Now</button>
+            </div>
+            <div class="product-box" data-category="clothing" data-price="24.99" data-name="White Shirt">
+                <img src="images/product/white.jpg" alt="White Shirt">
+                <h2>White Shirt</h2>
+                <p class="price">$24.99</p>
+                <select class="size-dropdown">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+                <button class="order-button">Order Now</button>
+            </div>
+            <div class="product-box" data-category="clothing" data-price="29.99" data-name="Green Shirt">
+                <img src="images/product/green.jpg" alt="Green Shirt">
+                <h2>Green Shirt</h2>
+                <p class="price">$29.99</p>
+                <select class="size-dropdown">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+                <button class="order-button">Order Now</button>
+            </div>
+            <div class="product-box" data-category="accessories" data-price="9.99" data-name="Black Belt">
+                <img src="images/product/belt.png" alt="Black Belt">
+                <h2>Black</h2>
+                <p class="price">$9.99</p>
+                <select class="size-dropdown">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+                <button class="order-button">Order Now</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://instagram.com" class="footer-link">Instagram</a>
+            <a href="https://twitter.com" class="footer-link">Twitter</a>
+            <a href="faq.html" class="footer-link">FAQs</a>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
